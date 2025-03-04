@@ -136,21 +136,3 @@ Chat
 
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
-
-Acknowledgments
-Flask Documentation
-
-Stripe API
-
-Redis Documentation
-
-Docker Documentation
-
-Contact
-For questions or feedback, please contact:
-
-Your Name
-
-Email: your.email@example.com
-
-GitHub: yourusername**
