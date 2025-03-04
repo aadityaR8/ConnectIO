@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <style>
+        body { background-color: black; color: white; font-family: Arial, sans-serif; }
+        .message { border: 1px solid white; padding: 10px; margin: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Chat with {{ receiver.username }}</h1>
+    <div id="messages">
+        {% for message in messages %}
+            <div class="message">
+                <strong>{{ message.sender.username }}:</strong> {{ message.content }}
+            </div>
+        {% endfor %}
+    </div>
+    <form method="POST">
+        <textarea name="content" required></textarea>
+        <br>
+        <button type="submit">Send</button>
+    </form>
+    <a href="{{ url_for('home') }}">Back to Home</a>
+</body>
+</html>
